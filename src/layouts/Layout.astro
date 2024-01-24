@@ -54,6 +54,23 @@ const { title } = Astro.props
 	width: auto;
   }
 
+  ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: #111111;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(194, 198, 218, 0.4);
+    border-radius: 10px;
+    border: 3px solid #090c1a;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c2c6da;
+  }
+  ::-webkit-scrollbar-corner {
+    display: none;
+  }
+
   @media screen and (max-width: 900px) {
 	body {
 	  width: fit-content;
