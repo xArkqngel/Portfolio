@@ -9,9 +9,9 @@ import LinkButton from '../components/LinkButton.astro';
 ---
 
 <Layout title="Portfolio | Miguel Rubiano">
-	<main>
-		<section class="about" id="contact">
-			<article class="about-description flex flex-col justify-center items-center p-10 w-[850px] h-[600px]">
+	<main class="px-4">
+		<section class="about py-44 pb-32 flex justify-center" id="about">
+			<article class="about-description flex flex-col justify-center items-center ">
 				<div class="flex flex-row gap-5">
 					<h1 class="about-title">Hola! Soy Miguel Rubiano </h1>
 					<div class="flex justify-center items-center">
@@ -40,7 +40,7 @@ import LinkButton from '../components/LinkButton.astro';
 				</ul>
 			</article>
 		</section>
-		<section class="experience flex flex-col items-center h-[400px]" id="experience">
+		<section class="experience flex flex-col items-center pb-32" id="experience">
 			<h2 class="text-3xl font-bold text-center mb-10">Experiencia</h2>
 			<div class="text-wrapper w-[800px] border border-slate-500 rounded-xl p-5 bg-slate-800/20">
 				<div class="experience-title flex flex-row gap-3 items-center">
@@ -53,7 +53,7 @@ import LinkButton from '../components/LinkButton.astro';
 				</p>
 			</div>
 		</section>
-		<section class="projects flex flex-col items-center mb-10" id="projects">
+		<section class="projects flex flex-col items-center pb-32" id="projects">
 			<h2 class="text-3xl font-bold text-center mb-10">Proyectos</h2>
 			<article class="flex flex-col gap-2 w-[800px]">
 				<h3 class="text-2xl font-bold text-[#fdfa29]">SacrisApp - Webs para estudio de tattoo SacrisInk</h3>
@@ -112,6 +112,12 @@ import LinkButton from '../components/LinkButton.astro';
 				</div>
 			</article>
 		</section>
+		<section class="stack">
+			<h2 class="text-3xl font-bold text-center mb-10">Stack</h2>
+		</section>
+		<section class="contact" id="contact">
+			
+		</section>
 	</main>
 </Layout>
 
@@ -134,7 +140,6 @@ import LinkButton from '../components/LinkButton.astro';
     }
 	}
 
-
 	.about-title{
 		font-size: 2.5rem;
 		font-weight: 700;
@@ -150,5 +155,6 @@ import LinkButton from '../components/LinkButton.astro';
 	.about-text b{
 		color: #faa628;
 	}
+
 </style>
 
