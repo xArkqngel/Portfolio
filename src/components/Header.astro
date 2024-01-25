@@ -23,7 +23,7 @@ const navItems = [
 ];
 ---
 
-<header class="h-14 flex justify-center items-center mx-auto pt-2 sticky top-0 w-full z-10 gap-60">
+<header class="h-14 flex justify-center items-center mx-auto pt-2 pb-2 sticky top-0 w-full z-10 gap-60 bg-slate-900/20 backdrop-blur-sm">
         <img class="size-12 rounded-full" 
         src="https://avatars.githubusercontent.com/u/67243723?s=400&u=f59d6c6157e8bc60db583965d85eb75cbddfc891&v=4" alt="xArkqngelPP">
         <nav class="flex flex-row gap-x-10">
@@ -82,10 +82,5 @@ const navItems = [
       animation: nav-shadown 1s linear both;
       animation-timeline: scroll();
       animation-range: 0 400px;
-    }
-    @keyframes nav-shadown {
-      to {
-        @apply shadow-xl;
-      }
     }
   </style>
