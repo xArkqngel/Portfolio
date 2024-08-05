@@ -5,6 +5,7 @@ import ToolTip from "../components/ToolTip.astro";
 import { stack, projects } from "../const";
 import ProjectItem from "../components/ProjectItem.astro";
 import "../styles/main.css";
+import type { ProjectInterface } from "../types";
 ---
 
 <Layout title="Portfolio | Miguel Rubiano">
@@ -88,10 +89,9 @@ import "../styles/main.css";
           empresarial utilizando React y NextJS, con un enfoque en la creación
           de una interfaz eficiente y fácil de usar. Desarrollo de componentes
           reutilizables y funcionalidades para soportar una arquitectura de
-          aplicación escalable.<br /><br /> •
-          Implementé funciones de internacionalización, incluidos diccionarios para
-          distintos idiomas, ampliando el alcance de la aplicación a los mercados
-          globales.<br />
+          aplicación escalable.<br /><br /> • Implementé funciones de internacionalización,
+          incluidos diccionarios para distintos idiomas, ampliando el alcance de
+          la aplicación a los mercados globales.<br />
           • Desarrollé interfaces para 3 nuevos tipos de usuarios, aumentando la
           accesibilidad y satisfacción en un 20%.<br /> • Integré la visualización
           de diagramas de Gantt mediante Syncfussion, agilizando los procesos de
@@ -101,7 +101,11 @@ import "../styles/main.css";
     </section>
     <section class="projects flex flex-col items-center pb-32" id="projects">
       <h2 class="text-3xl font-bold text-center mb-10">Proyectos</h2>
-      {projects.map((project) => <ProjectItem project={project} />)}
+      {
+        projects.map((project: ProjectInterface) => (
+          <ProjectItem project={project} />
+        ))
+      }
     </section>
     <section class="stacks flex flex-col items-center pb-32">
       <h2 class="text-3xl font-bold text-center mb-10">Stack</h2>

@@ -1,3 +1,4 @@
+import type { ProjectInterface } from "./types";
 
 
 export const stack = [
@@ -142,7 +143,7 @@ export const TAGS = {
   },
 };
 
-export const projects = [
+export const projects : ProjectInterface[] = [
   {
     title: "WhatToDo",
     description:
