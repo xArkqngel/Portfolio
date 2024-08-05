@@ -1,3 +1,5 @@
+
+
 export const stack = [
   {
     name: "JavaScript",
@@ -118,5 +120,45 @@ export const stack = [
   {
     name: "Figma",
     color: "#A95FFF",
+  },
+];
+
+export const TAGS = {
+  NEXT: {
+    name: "NextJS",
+    class: "bg-black text-white",
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#0d1117] text-white",
+  },
+  ZUSTAND: {
+    name: "Zustand",
+    class: "bg-[#f76927] text-black",
+  },
+};
+
+export const projects = [
+  {
+    title: "WhatToDo",
+    description:
+      "Aplicación para el seguimiento de tareas tipo Kanban. Permite la creación de tableros, listas y tareas, además de la implementación de contador tipo pomodoro y contadores individuales para las tareas.",
+    tech: [TAGS.NEXT, TAGS.ZUSTAND, TAGS.TAILWIND],
+    image: "/whattodo.webp",
+    web: "https://what-to-do-three.vercel.app/",
+    repo: "https://github.com/xArkqngel/WhatToDo",
+  },
+  {
+    title: "Steam Clone",
+    description:
+      "Landing page básico de Steam, realizado para practicar y conocer el framework de Astro.",
+    tech: [TAGS.ASTRO, TAGS.TAILWIND],
+    image: "/steamclone.webp",
+    web: "https://xark-steam-clone.netlify.app/",
+    repo: "https://github.com/xArkqngel/SteamClone",
   },
 ];

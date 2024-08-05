@@ -1,0 +1,23 @@
+.bg-slate {
+    background-color: #0d1117;
+  }
+  .border-rounded {
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .p-5 {
+    padding: 20px;
+  }
+  
