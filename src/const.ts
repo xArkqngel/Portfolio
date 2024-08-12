@@ -1,4 +1,4 @@
-import type { ProjectInterface } from "./types";
+import type { ExperienceInterface, ProjectInterface } from "./types";
 
 
 export const stack = [
@@ -161,5 +161,33 @@ export const projects : ProjectInterface[] = [
     image: "/steamclone.webp",
     web: "https://xark-steam-clone.netlify.app/",
     repo: "https://github.com/xArkqngel/SteamClone",
+  },
+];
+
+export const experiences : ExperienceInterface[] = [
+  {
+    title: "Desarrollador Frontend",
+    description: "Responsable de desarrollar y mantener el front-end de la aplicación empresarial utilizando React y NextJS, con un enfoque en la creación de una interfaz eficiente y fácil de usar.",
+    bullets: [
+      "Desarrollé componentes reutilizables y funcionalidades para soportar una arquitectura de aplicación escalable.",
+      "Implementé funciones de internacionalización, incluidos diccionarios para distintos idiomas, ampliando el alcance de la aplicación a los mercados globales.",
+      "Desarrollé interfaces para 3 nuevos tipos de usuarios, aumentando la accesibilidad y satisfacción en un 20%.",
+      "Integré la visualización de diagramas de Gantt mediante Syncfussion, agilizando los procesos de gestión y seguimiento deproyectos.",
+    ],
+    company: "Sostecnible",
+    logo: "/sostecnible.svg",
+    date: "Julio 2023 - Enero 2024",
+  },
+  {
+    title: "Asistente de tecnología",
+    description:
+      "Responsable del desarrollo y mantenimiento de sitios web estáticos para distintas empresas, utilizando HTML, CSS, Javascript y Bootstrap o constructores de sitios web como Wix o GoDaddy, según las necesidades del usuario.",
+    bullets: [
+      "Desarrollé y mantuve sitios web estáticos para varias empresas, asegurando una presencia en línea profesional y accesible",
+      "Colaboré en el mantenimiento y montaje de redes y equipos de computo en las instalaciones de las empresas, mejorando la eficiencia operativa.",
+      "Gestioné la carga y organización de documentos solicitados por entidades gubernamentales, garantizando el cumplimiento normativo.",
+    ],
+    company: "Datacomputo",
+    date: "Febrero 2022 - Agosto 2022",
   },
 ];
