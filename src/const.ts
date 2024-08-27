@@ -3,14 +3,6 @@ import type { ExperienceInterface, ProjectInterface } from "./types";
 
 export const stack = [
   {
-    name: "JavaScript",
-    color: "#F0DB4F",
-  },
-  {
-    name: "TypeScript",
-    color: "#3178C6",
-  },
-  {
     name: "React",
     color: "#00D8FF",
   },
@@ -19,9 +11,41 @@ export const stack = [
     color: "#FAFAFA",
   },
   {
+    name: "TypeScript",
+    color: "#3178C6",
+  },
+  {
     name: "Zustand",
     color: "#764ABC",
-  }, 
+  },
+  {
+    name: "Tailwind",
+    color: "#17BAB8",
+  },
+  {
+    name: "NestJS",
+    color: "#E0234E",
+  },
+  {
+    name: "GraphQL",
+    color: "#E10098",
+  },
+  {
+    name: "Postgres",
+    color: "#336791",
+  },
+  {
+    name: "MongoDB",
+    color: "#47A248",
+  },
+  {
+    name: "AWS",
+    color: "#FF9900",
+  },
+  {
+    name: "JavaScript",
+    color: "#F0DB4F",
+  },
   {
     name: "Astro",
     color: "#FAFAFA",
@@ -33,10 +57,6 @@ export const stack = [
   {
     name: "CSS",
     color: "#30A9DC",
-  },
-  {
-    name: "Tailwind",
-    color: "#17BAB8",
   },
   {
     name: "Bootstrap",
@@ -75,10 +95,6 @@ export const stack = [
     color: "#FAFAFA",
   },
   {
-    name: "NestJS",
-    color: "#E0234E",
-  },
-  {
     name: "Jest",
     color: "#99425B",
   },
@@ -87,24 +103,8 @@ export const stack = [
     color: "#00C389",
   },
   {
-    name: "GraphQL",
-    color: "#E10098",
-  },
-  {
-    name: "MongoDB",
-    color: "#47A248",
-  },
-  {
-    name: "Postgres",
-    color: "#336791",
-  },
-  {
     name: "MySQL",
     color: "#4479A1",
-  },
-  {
-    name: "AWS",
-    color: "#FF9900",
   },
   {
     name: "Supabase",
@@ -124,6 +124,7 @@ export const stack = [
   },
 ];
 
+
 export const TAGS = {
   NEXT: {
     name: "NextJS",
@@ -141,22 +142,48 @@ export const TAGS = {
     name: "Zustand",
     class: "bg-[#f76927] text-black",
   },
+  REACT: {
+    name: "React",
+    class: "bg-white text-black",
+  },
+  NESTJS: {
+    name: "NestJS",
+    class: "bg-black text-white",
+  },
+  GRAPHQL: {
+    name: "GraphQL",
+    class: "bg-[#6a329f] text-white",
+  },
+  MUI : {
+    name: "MUI",
+    class: "bg-white text-black",
+  },
 };
 
 export const projects : ProjectInterface[] = [
   {
     title: "WhatToDo",
     description:
-      "Aplicación para el seguimiento de tareas tipo Kanban. Permite la creación de tableros, listas y tareas, además de la implementación de contador tipo pomodoro y contadores individuales para las tareas.",
+      "Kanban-type task tracking application. It allows the creation of boards, lists and tasks, as well as the implementation of pomodoro counters and individual counters for tasks.",
     tech: [TAGS.NEXT, TAGS.ZUSTAND, TAGS.TAILWIND],
     image: "/whattodo.webp",
     web: "https://what-to-do-three.vercel.app/",
     repo: "https://github.com/xArkqngel/WhatToDo",
   },
   {
+    title: "WhatTheChat",
+    description:
+      "Real-time chat application, with the ability to create rooms and send messages.",
+    tech: [TAGS.REACT, TAGS.MUI, TAGS.NESTJS, TAGS.GRAPHQL],
+    image: "/whattodo.webp",
+    web: "https://main.d2e3el9esugaq5.amplifyapp.com/chats/66cd1125ff5181c7fbe08096",
+    backRepo: "https://github.com/xArkqngel/what-the-chat-backend",
+    frontRepo: "https://github.com/xArkqngel/what-the-chat-ui",
+  },
+  {
     title: "Steam Clone",
     description:
-      "Landing page básico de Steam, realizado para practicar y conocer el framework de Astro.",
+      "Steam Landing page clone using Astro and Tailwind CSS. Made as a personal project to learn Astro.",
     tech: [TAGS.ASTRO, TAGS.TAILWIND],
     image: "/steamclone.webp",
     web: "https://xark-steam-clone.netlify.app/",

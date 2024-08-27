@@ -18,10 +18,24 @@ import LinkButton from "./LinkButton.astro";
         <WebIcon class="size-6" />
         Ir al sitio web
       </LinkButton>
-      <LinkButton href={project.repo}>
+      {project.repo && (
+        <LinkButton href={project.repo}>
         <GithubIcon class="size-6" />
-        Repositorio
+        Github Repo
       </LinkButton>
+      )}
+      {(project.frontRepo && project.backRepo) && (
+        <div class="flex flex-row gap-2">
+          <LinkButton href={project.frontRepo}>
+        <GithubIcon class="size-6" />
+        Frontend
+      </LinkButton>
+      <LinkButton href={project.backRepo}>
+        <GithubIcon class="size-6" />
+        Backend
+      </LinkButton>
+        </div>
+      )}
     </div>
   </div>
   <div class="flex flex-col w-2/5">

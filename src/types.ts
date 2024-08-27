@@ -4,7 +4,9 @@ export interface ProjectInterface {
     tech: TagsInterface[];
     image: string;
     web: string;
-    repo: string;
+    repo?: string;
+    frontRepo?: string;
+    backRepo?: string;
     }
 
 export interface TagsInterface {
