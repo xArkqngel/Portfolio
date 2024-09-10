@@ -1,6 +1,5 @@
 import type { ExperienceInterface, ProjectInterface } from "./types";
 
-
 export const stack = [
   {
     name: "React",
@@ -124,7 +123,6 @@ export const stack = [
   },
 ];
 
-
 export const TAGS = {
   NEXT: {
     name: "NextJS",
@@ -154,13 +152,21 @@ export const TAGS = {
     name: "GraphQL",
     class: "bg-[#6a329f] text-white",
   },
-  MUI : {
+  MUI: {
     name: "MUI",
     class: "bg-white text-black",
   },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-black text-yellow-300",
+  },
+  APOLLO: {
+    name: "Apollo",
+    class: "bg-[#311C87] text-white",
+  },
 };
 
-export const projects : ProjectInterface[] = [
+export const projects: ProjectInterface[] = [
   {
     title: "WhatToDo",
     description:
@@ -181,6 +187,15 @@ export const projects : ProjectInterface[] = [
     frontRepo: "https://github.com/xArkqngel/what-the-chat-ui",
   },
   {
+    title: "Steam Top 100 Games - Apollo GraphQL API",
+    description:
+      "Apollo GraphQL API that uses as data, the top 100 games on Steam and its DLCs, scraped from the Steam Store.",
+    tech: [TAGS.JAVASCRIPT, TAGS.APOLLO, TAGS.GRAPHQL],
+    image: "/steamapollo.webp",
+    web: "https://steam-top100-apollo-api.vercel.app/graphql",
+    repo: "https://github.com/xArkqngel/steam-top100-apollo-api",
+  },
+  {
     title: "Steam Clone",
     description:
       "Steam Landing page clone using Astro and Tailwind CSS. Made as a personal project to learn Astro.",
@@ -191,30 +206,31 @@ export const projects : ProjectInterface[] = [
   },
 ];
 
-export const experiences : ExperienceInterface[] = [
+export const experiences: ExperienceInterface[] = [
   {
-    title: "Desarrollador Frontend",
-    description: "Responsable de desarrollar y mantener el front-end de la aplicación empresarial utilizando React y NextJS, con un enfoque en la creación de una interfaz eficiente y fácil de usar.",
+    title: "Frontend Developer",
+    description:
+      "Responsible for developing and maintaining the front-end of the enterprise application using React and NextJS, with a focus on creating an efficient and user-friendly interface.",
     bullets: [
-      "Desarrollé componentes reutilizables y funcionalidades para soportar una arquitectura de aplicación escalable.",
-      "Implementé funciones de internacionalización, incluidos diccionarios para distintos idiomas, ampliando el alcance de la aplicación a los mercados globales.",
-      "Desarrollé interfaces para 3 nuevos tipos de usuarios, aumentando la accesibilidad y satisfacción en un 20%.",
-      "Integré la visualización de diagramas de Gantt mediante Syncfussion, agilizando los procesos de gestión y seguimiento deproyectos.",
+      "Developed reusable components and functionality to support a scalable application architecture.",
+      "Implemented internationalization features, including dictionaries for different languages, extending the scope of the application to global markets.",
+      "Developed interfaces for 3 new types of users, increasing accessibility and satisfaction by 20%.",
+      "Integrated the visualization of Gantt charts through Syncfussion, streamlining project management and tracking processes.",
     ],
     company: "Sostecnible",
     logo: "/sostecnible.svg",
-    date: "Julio 2023 - Enero 2024",
+    date: "July 2023 - January 2024",
   },
   {
-    title: "Asistente de tecnología",
+    title: "TI Assistant",
     description:
-      "Responsable del desarrollo y mantenimiento de sitios web estáticos para distintas empresas, utilizando HTML, CSS, Javascript y Bootstrap o constructores de sitios web como Wix o GoDaddy, según las necesidades del usuario.",
+      "Responsible for the development and maintenance of static websites for different companies, using HTML, CSS, Javascript and Bootstrap or website builders such as Wix or GoDaddy, according to the user's needs.",
     bullets: [
-      "Desarrollé y mantuve sitios web estáticos para varias empresas, asegurando una presencia en línea profesional y accesible",
-      "Colaboré en el mantenimiento y montaje de redes y equipos de computo en las instalaciones de las empresas, mejorando la eficiencia operativa.",
-      "Gestioné la carga y organización de documentos solicitados por entidades gubernamentales, garantizando el cumplimiento normativo.",
+      "Developed and maintained static websites for several companies, ensuring a professional and accessible online presence.",
+      "Collaborated in the maintenance and assembly of networks and computer equipment in the companies' facilities, improving operational efficiency.",
+      "Managed the uploading and organization of documents requested by governmental entities, ensuring regulatory compliance.",
     ],
     company: "Datacomputo",
-    date: "Febrero 2022 - Agosto 2022",
+    date: "February 2022 - August 2022",
   },
 ];

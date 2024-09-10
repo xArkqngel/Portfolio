@@ -16,7 +16,7 @@ import type { ProjectInterface } from "../types";
         class="about-description flex flex-col justify-center items-center"
       >
         <div class="flex flex-row gap-5">
-          <h1 class="about-title">Hola! Soy Miguel Rubiano</h1>
+          <h1 class="about-title">Hi! I'm Miguel Rubiano</h1>
           <div class="flex justify-center items-center">
             <a
               href="https://www.linkedin.com/in/miguelrubiano343/"
@@ -30,13 +30,11 @@ import type { ProjectInterface } from "../types";
         <p
           class="about-text border border-slate-500 rounded-xl p-5 w-[600px] bg-slate-800/20"
         >
-          Ingeniero en Sistemas y Computación con <b
-            >1 año de experiencia como desarrollador frontend</b
-          >. A lo largo de esta aventura, He <b>colaborado</b> con mis compañeros
-          en sus deberes através de distintas areas como backend, diseño, y manejo
-          de bases de datos, siempre <b>buscando aprender</b> de esto. Me gusta explorar
-          nuevas tecnologías que me permitan construir aplicaciones sostenibles y
-          escalables.
+          Computer and Systems Engineer with <b
+            >1 year of frontend experience</b
+          >. Throughout this adventure, I've <b>collaborated</b> with my team
+          on different labors such as backend, design, and database management,
+           always <b>looking to learn</b> from this. I like to explore new technologies that allow me to build sustainable and scalable applications.
         </p>
         <ul class="flex flex-row justify-end gap-8 mt-2">
           <li
@@ -76,7 +74,7 @@ import type { ProjectInterface } from "../types";
       class="experience flex flex-col items-center pb-32"
       id="experience"
     >
-      <h2 class="text-3xl font-bold text-center mb-10">Experiencia</h2>
+      <h2 class="text-3xl font-bold text-center mb-10">Experience</h2>
       {
         experiences.map((experience) => (
           <ExperienceItem experience={experience} />
@@ -84,7 +82,7 @@ import type { ProjectInterface } from "../types";
       }
     </section>
     <section class="projects flex flex-col items-center pb-32" id="projects">
-      <h2 class="text-3xl font-bold text-center mb-10">Proyectos</h2>
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
       {
         projects.map((project: ProjectInterface) => (
           <ProjectItem project={project} />
