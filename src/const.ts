@@ -219,7 +219,7 @@ export const experiences: ExperienceInterface[] = [
     ],
     company: "Sostecnible",
     logo: "/sostecnible.svg",
-    date: "July 2023 - January 2024",
+    date: "July 2023 - Present",
   },
   {
     title: "TI Assistant",
