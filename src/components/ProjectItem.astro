@@ -14,10 +14,12 @@ import LinkButton from "./LinkButton.astro";
       <p>{project.description}</p>
     </div>
     <div class="flex flex-row justify-start gap-2 mt-2">
-      <LinkButton href={project.web}>
+      {project.web && (
+        <LinkButton href={project.web}>
         <WebIcon class="size-6" />
         Ir al sitio web
       </LinkButton>
+      )}
       {project.repo && (
         <LinkButton href={project.repo}>
         <GithubIcon class="size-6" />

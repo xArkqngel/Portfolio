@@ -182,7 +182,6 @@ export const projects: ProjectInterface[] = [
       "Real-time chat application, with the ability to create rooms and send messages.",
     tech: [TAGS.REACT, TAGS.MUI, TAGS.NESTJS, TAGS.GRAPHQL],
     image: "/whatthechat.webp",
-    web: "https://main.d2e3el9esugaq5.amplifyapp.com/chats/66cd1125ff5181c7fbe08096",
     backRepo: "https://github.com/xArkqngel/what-the-chat-backend",
     frontRepo: "https://github.com/xArkqngel/what-the-chat-ui",
   },
@@ -219,7 +218,7 @@ export const experiences: ExperienceInterface[] = [
     ],
     company: "Sostecnible",
     logo: "/sostecnible.svg",
-    date: "July 2023 - Present",
+    date: "July 2023 - December 2024",
   },
   {
     title: "TI Assistant",
